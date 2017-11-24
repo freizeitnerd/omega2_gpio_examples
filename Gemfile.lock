@@ -1,0 +1,12 @@
+GEM
+  specs:
+    omega2_gpio (0.1.06.pre.alpha01)
+
+PLATFORMS
+  x64-mingw32
+
+DEPENDENCIES
+  omega2_gpio (~> 0.1)
+
+BUNDLED WITH
+   1.11.2
