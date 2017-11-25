@@ -15,3 +15,12 @@ gpios.each do |gpio|
   sleep(0.3)
   gpio.high
 end
+
+gpios = []
+gpio_numbers.each do |gpio_number|
+  gpios.push(Omega2Gpio::Input.new(gpio_number))
+end
+
+gpios.each do |gpio|
+  puts "GPIO#{gpio.gpio_number} reads value #{gpio.read}"
+end
